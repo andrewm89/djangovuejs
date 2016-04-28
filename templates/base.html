@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body id="app">
+    <p>[[ message ]]</p>
+    <input v-model="message">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
+<script type="text/javascript" src="{% static 'vuejs/helloworld.js' %}"></script>
+</body>
+</html>
