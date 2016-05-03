@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from views import welcome
+from joblist.views import job_list
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', welcome)
+    url(r'^$', job_list)
 ]

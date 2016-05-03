@@ -3,12 +3,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/jobboard.css' %}">
+    <title>Django Vue.JS Job Board</title>
 </head>
 <body id="app">
-    <p>[[ message ]]</p>
-    <input v-model="message">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
-<script type="text/javascript" src="{% static 'vuejs/helloworld.js' %}"></script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">[[ apptitle ]]</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block jobs %}
+
+    {% endblock %}
+
+    <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Vue.JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.min.js"></script>
+    <script type="text/javascript" src="{% static 'vuejs/djangovue.js' %}"></script>
 </body>
 </html>

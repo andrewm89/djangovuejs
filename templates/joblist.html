@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block jobs %}
+<div class="container">
+    <form class="form-group">
+        <label class="form-label" for="title">Job Title</label>
+        <input class="form-control" id="title" v-model="jobtitle">
+
+        <label class="form-label" for="description">Job Description</label>
+        <input class="form-control" id="description" v-model="jobdescription">
+
+        <button class="btn" v-on:click="addJob()">Submit</button>
+    </form>
+
+    <div v-for="job in jobs">
+        [[ job.jobtitle ]]
+
+        [[ job.jobdescription ]]
+    </div>
+</div>
+{% endblock %}
