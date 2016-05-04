@@ -9,18 +9,24 @@ body {
 
 .navbar-header {
     width:100%;
-    display: inline;
+}
+
+.navtitle {
+    margin: auto;
+    display: inline-block;
 }
 
 .navbar-brand {
     color: white !important;
-    width:100%;
+    display: inline;
 }
 
 .navimage {
     max-height: 40px;
     float: left;
-    padding: 5px 0;
+    padding: 0;
+    margin: 5px;
+    display: inline;
 }
 
 .job {
