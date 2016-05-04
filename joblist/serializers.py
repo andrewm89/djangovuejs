@@ -4,4 +4,4 @@ from rest_framework import serializers
 class JobsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = JobList
-        fields = ('jobtitle', 'jobdescription', 'postdate')
+        fields = ('id', 'jobtitle', 'jobdescription', 'postdate')

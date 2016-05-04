@@ -14,7 +14,7 @@ def job_list(request):
 
 class JobsViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    API endpoint that allows jobs to be viewed or edited.
     """
     queryset = JobList.objects.all()
     serializer_class = JobsSerializer

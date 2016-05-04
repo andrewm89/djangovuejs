@@ -25,5 +25,6 @@ router.register(r'jobs', JobsViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', job_list),
-    url(r'^', include(router.urls)),
+    url(r'^api/', include(router.urls)),
 ]
+

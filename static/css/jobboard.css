@@ -7,19 +7,25 @@ body {
     background-image: none !important;
 }
 
-.navbar-brand {
-    color: white !important;
+.navbar-header {
+    width:100%;
+    display: inline;
 }
 
-h1 {
-    margin: 0;
-    text-align: center;
+.navbar-brand {
+    color: white !important;
+    width:100%;
+}
+
+.navimage {
+    max-height: 40px;
+    float: left;
+    padding: 5px 0;
 }
 
 .job {
     background-color: #44B78B;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 10px 25px;
     border-radius: 10px;
-    width: 100%;
 }
